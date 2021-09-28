@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typing Test</title>
+	<script src= "ScriptCode.js" type="text/javascript"></script>
+	<link href="design.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body background="wall2.jpeg">
+	<center><h1>
+		<font color="white">
+			<main>
+				<div id="text">
+						TYPING TUTOR
+				</div>
+			</main>
+		</font>
+		<font color="white">
+			<div id="creator">
+				Developers:<br>
+				Lagad Krishna<br>
+				Pawar Prajyot<br>
+				Hande Pradip
+			</div>
+		</font>
+
+	</h1></center>
+	<marquee id="m1" bgcolor="black"><font color="white" >Typing test is here to test your typing speed.</font></marquee>
+	<CENTER>
+		<FORM name="theForm">
+			<TABLE id="tbl" BORDER=3 CELLSPACING=0 CELLPADDING=0 width="590" height="300">
+				<TR>
+					<TD id="td1"><font color="white">Are you a....</font></TD>
+					<TD align=center id="radio">
+						<input type=radio name="sme" value="Beginner" onClick="small()">Beginner
+						<input type=radio name="sme" value="Average" onClick="medium()">Average
+						<input type=radio name="sme" value="Expert" onClick="large()">Expert
+					</TD>
+					
+				</TR>
+				<TR>
+					<TD colspan=2><BR>
+						<center>
+							<input id="start" type=button value="Start Typing Test" name="start" onClick="beginIt()"></center><P>
+						<textarea name="given" cols=70 rows=5 wrap=on onFocus="cheat()"></textarea>
+					</TD>
+				</TR>
+				<TR>
+					<TD colspan=2>
+						<center>
+							<input type=text name="typed" size=75><br>
+							<input id="done" type=button value="DONE"  name="stop"  onClick="stopIt()">
+						</center>
+					</TD>
+				</TR>
+			</TABLE>
+		</FORM>
+	</CENTER><br><br><br><br>
+	<blink><marquee id="m2" >NOTE: This version is being tested. Final build is not released yet.</marquee></blink>
+</body>
+</html>
